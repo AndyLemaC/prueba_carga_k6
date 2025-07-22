@@ -11,6 +11,26 @@ Este proyecto realiza una prueba de carga sobre el endpoint de login utilizando 
 - Editor de texto (Visual Studio Code, por ejemplo)
 
 ---
+## ⚙️ Configuración del Entorno
+
+### 1️⃣ Clonar el Repositorio
+
+```bash
+git clone https://github.com/AndyLemaC/prueba_carga_k6.git
+cd prueba_carga_k6
+```
+
+### 2️⃣ Instalar K6
+    
+    - Opción 1: Usar [Chocolatey (Windows)](https://community.chocolatey.org/packages/k6)
+
+    ```bash
+    choco install k6
+    ```
+
+    - Opción 2: Descargar desde [https://k6.io/docs/get-started/installation/](https://k6.io/docs/get-started/installation/)
+
+---
 
 ## 📁 Estructura del Proyecto
 
@@ -33,7 +53,10 @@ prueba_k6/
 Desde la terminal (CMD o PowerShell), navega a la carpeta del proyecto:
 
 ```bash
+# Ir a la carpeta donde esta el proyecto
 cd C:\prueba_k6\prueba_k6
+
+# Ejecutar pruebas de carga
 k6 run prueba_k6\scripts\login-test.js
 ```
 
@@ -91,3 +114,9 @@ k6 run prueba_k6\scripts\login-test.js
 ## 📌 Conclusiones
 
 Consulta el archivo `conclusiones.txt` para ver los hallazgos clave del test, comportamiento bajo carga, posibles mejoras o puntos de atención detectados.
+
+## ❓ Resolución de Problemas
+
+- Verifica que tengas K6 correctamente instalado (`k6 version`)
+- Asegúrate de estar en la carpeta del proyecto antes de ejecutar el script
+- Asegúrate de que el archivo `usuarios.csv` tenga el formato esperado
