@@ -18,13 +18,12 @@ Este proyecto realiza una prueba de carga sobre el endpoint de login utilizando 
 prueba_k6/
 ├── data/
 │   └── users.csv                # Datos de prueba con usuarios y contraseñas
+├── resultados/
+│   ├── resultado_prueba_k6.png  # Reporte generado                
 ├── scripts/
 │   └── login-test.js            # Script de prueba principal
-├── resultados/
-│   ├── resumen.json             # Reporte generado automáticamente
-│   └── reporte.html             # Reporte visual (opcional)
-├── conclusiones.txt            # Hallazgos del test
-└── README.md                   # Este archivo
+├── conclusiones.txt             # Hallazgos del test
+└── README.md                    # Este archivo
 ```
 
 ---
@@ -34,8 +33,8 @@ prueba_k6/
 Desde la terminal (CMD o PowerShell), navega a la carpeta del proyecto:
 
 ```bash
-cd C:\Users\andyn\OneDrive\Documents\prueba_k6\prueba_k6
-k6 run scripts\login-test.js
+cd C:\prueba_k6\prueba_k6
+k6 run prueba_k6\scripts\login-test.js
 ```
 
 ---
