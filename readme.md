@@ -20,18 +20,45 @@ git clone https://github.com/AndyLemaC/prueba_carga_k6.git
 cd prueba_carga_k6
 ```
 
-### 2️⃣ Instalar K6
+### 2️⃣ Instalar Chocolatey y K6
     
-    - Opción 1: Usar [Chocolatey (Windows)](https://community.chocolatey.org/packages/k6)
+#### Paso 1: Instalar Chocolatey (si no lo tienes)
+1. Abre CMD como Administrador.
+2. Ejecuta este comando:
 
 ```bash
-    choco install k6
+    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = 'Tls12'; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+```
+#### Paso 2: Instalar K6 con Chocolatey
+Una vez que tengas Chocolatey instalado, ejecuta en la misma ventana de CMD:
+
+```bash
+choco install k6 -y
+
 ```
 
-    - Opción 2: Descargar desde [https://k6.io/docs/get-started/installation/](https://k6.io/docs/get-started/installation/)
+#### Paso 3: Verificar instalación
+Después de la instalación, puedes verificar que K6 esté funcionando correctamente con:
+
+```bash
+k6 version
+```
+Esto debería mostrarte algo como:
+
+```bash
+k6 v0.49.0 (o la versión más reciente)
+```
+
+### 🔁 Alternativa sin Chocolatey
+
+Si no quieres usar Chocolatey, puedes descargar el ejecutable desde:
+
+👉 https://github.com/grafana/k6/releases
+
+Descargas el .zip, lo extraes y agregas la carpeta al PATH del sistema.
 
 ---
-
 ## 📁 Estructura del Proyecto
 
 ```
