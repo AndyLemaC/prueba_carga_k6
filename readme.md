@@ -13,14 +13,7 @@ Este proyecto realiza una prueba de carga sobre el endpoint de login utilizando 
 ---
 ## ⚙️ Configuración del Entorno
 
-### 1️⃣ Clonar el Repositorio
-
-```bash
-git clone https://github.com/AndyLemaC/prueba_carga_k6.git
-cd prueba_carga_k6
-```
-
-### 2️⃣ Instalar Chocolatey y K6
+### 1️⃣ Instalar Chocolatey y K6
     
 #### Paso 1: Instalar Chocolatey (si no lo tienes)
 1. Abre CMD como Administrador.
@@ -57,6 +50,13 @@ Si no quieres usar Chocolatey, puedes descargar el ejecutable desde:
 👉 https://github.com/grafana/k6/releases
 
 Descargas el .zip, lo extraes y agregas la carpeta al PATH del sistema.
+
+### 2️⃣ Clonar el Repositorio
+
+```bash
+git clone https://github.com/AndyLemaC/prueba_carga_k6.git
+cd prueba_carga_k6
+```
 
 ---
 ## 📁 Estructura del Proyecto
