@@ -24,9 +24,9 @@ cd prueba_carga_k6
     
     - Opción 1: Usar [Chocolatey (Windows)](https://community.chocolatey.org/packages/k6)
 
-    ```bash
+```bash
     choco install k6
-    ```
+```
 
     - Opción 2: Descargar desde [https://k6.io/docs/get-started/installation/](https://k6.io/docs/get-started/installation/)
 
